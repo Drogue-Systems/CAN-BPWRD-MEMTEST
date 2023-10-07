@@ -51,9 +51,9 @@ int N24C32_byte_write(byte address_1, byte address_2, byte data)
     Wire2.write(address_1);
     Wire2.write(address_2);
     Wire2.write(data);
-   // Serial2.print("end send: ");
-  //  Serial2.println(Wire2.endTransmission());
-
+//    Serial2.print("end send: ");
+//    Serial2.println(Wire2.endTransmission());
+    Wire2.endTransmission();
     return 1;
 
 }
